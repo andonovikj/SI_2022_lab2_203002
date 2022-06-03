@@ -4,7 +4,7 @@ public class SILab2Test {
 
 
     @Test
-    void test1() { // Every statement
+    void everyStatement() {
         IllegalArgumentException ex = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of()));
         assertTrue(ex.getMessage().contains("List length should be greater than 0"));
 
@@ -17,7 +17,7 @@ public class SILab2Test {
     }
 
     @Test
-    void test2() { // Every branch
+    void everyBranch() { 
         IllegalArgumentException ex = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of()));
         assertTrue(ex.getMessage().contains("List length should be greater than 0"));
 
